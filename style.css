@@ -1,0 +1,70 @@
+/* style.css */
+
+* {
+  margin: 1;
+  padding: 0;
+}
+
+body {
+  background: url(img/bg\ bata.jpg);
+  background-size: cover;
+}
+
+.hidden {
+  display: none;
+}
+
+/* shop */
+
+.link {
+  font-family: "Roboto", sans-serif;
+  color: black;
+  text-decoration: none;
+}
+
+hr {
+  border-bottom: 2px solid black;
+}
+
+.nav-menu button {
+  font-weight: bold;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#shop table,
+#post table {
+  margin: auto;
+  background: rgba(0, 0, 0, 0.4);
+  width: 49%;
+}
+
+#darkwiki table {
+  margin: auto;
+  background: rgba(0, 0, 0, 0.4);
+  width: 70%;
+}
+
+/* dark wiki */
+
+.link-to-access {
+  width: 65%;
+  margin: auto;
+  text-align: left;
+}
+
+.say-welcome {
+  background: rgba(160, 160, 160, 0.5);
+  margin: auto;
+}
+
+.link-to-access a {
+  display: block;
+}
+
+/* code */
+
+#code p {
+  font-weight: bolder;
+}

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en" style="text-align: center">
+  <head>
+    <!-- Require Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+
+    <title>= The "Dark" Web =</title>
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="link">= Welcome to The "Dark" Web =</h1>
+    <hr />
+    <div class="nav-menu">
+      <button onclick="shop()">= Shop =</button>
+      <button onclick="post()">= Post =</button>
+      <button onclick="darkwiki()">= Dark Wiki =</button>
+    </div>
+    <br />
+    <form action="">
+      <input type="text" placeholder="Telusuri" />
+      <button>Cari</button>
+    </form>
+    <hr />
+
+    <!-- shop -->
+    <div id="shop" class="shop">
+      <h1 class="title">= Shop =</h1>
+      <table border="1" cellpadding="10">
+        <tr>
+          <th>
+            <figure>
+              <img src="img/kecap bango.jpg" alt="Kecap Bango" width="200" />
+              <figcaption class="title-item">Kecap Bango</figcaption>
+              <h4 class="harga">Rp 30.000</h4>
+              <label for="s">Masukkan jumlah barang yang ingin kamu beli:</label>
+              <input type="text" name="s" id="s" placeholder="Type Something" />
+              <br />
+              <button class="btn-buy" onclick="buyItems()">Buy Items</button>
+            </figure>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <figure>
+              <img src="img/chucky.jpg" alt="Chucky" width="200" />
+              <figcaption class="title-item">Boneka Chucky yang belum dirasuki roh penjahat</figcaption>
+              <h4 class="harga">Rp 890.000</h4>
+              <label for="s">Masukkan jumlah barang yang ingin kamu beli:</label>
+              <input type="text" name="s" id="s" placeholder="Type Something" />
+              <br />
+              <button class="btn-buy" onclick="buyItems()">Buy Items</button>
+            </figure>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <figure>
+              <img src="img/scar megalodon.jpg" alt="Scar Megalodon" width="200" />
+              <figcaption class="title-item">Scar Megalodon ditambah dengan kekuatan boboiboy kuasa 7</figcaption>
+              <h4 class="harga">Rp 14.550.000</h4>
+              <label for="s">Masukkan jumlah barang yang ingin kamu beli:</label>
+              <input type="text" name="s" id="s" placeholder="Type Something" />
+              <br />
+              <button class="btn-buy" onclick="buyItems()">Buy Items</button>
+            </figure>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <figure>
+              <img src="img/baygon.jpg" alt="Obat Baygon Berpaket" width="200" />
+              <figcaption class="title-item">Paket Obat nyamuk Baygon + Paket Premium Netflix dan 1 tahun Disney+ Hotstar</figcaption>
+              <h4 class="harga">Rp 500.000.000.000</h4>
+              <label for="s">Masukkan jumlah barang yang ingin kamu beli:</label>
+              <input type="text" name="s" id="s" placeholder="Type Something" />
+              <br />
+              <button class="btn-buy" onclick="buyItems()">Buy Items</button>
+            </figure>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <figure>
+              <img src="img/film windah-man.jpg" alt="Tiket Windah-Man: This is my Home" width="200" />
+              <figcaption class="title-item">Tiket Film Windah-Man: This is my Home</figcaption>
+              <h4 class="harga">Rp 45.000</h4>
+              <label for="s">Masukkan jumlah barang yang ingin kamu beli:</label>
+              <input type="text" name="s" id="s" placeholder="Type Something" />
+              <br />
+              <button class="btn-buy" onclick="buyItems()">Buy Items</button>
+            </figure>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <figure>
+              <img src="img/mobil wa.jpg" alt="Mobil WhatsApp" width="200" />
+              <figcaption class="title-item">Mobil WhatsApp</figcaption>
+              <h4 class="harga">Rp 1.399.990.000</h4>
+              <label for="s">Masukkan jumlah barang yang ingin kamu beli:</label>
+              <input type="text" name="s" id="s" placeholder="Type Something" />
+              <br />
+              <button class="btn-buy" onclick="buyItems()">Buy Items</button>
+            </figure>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <figure>
+              <img src="img/kaset red mist.jpg" alt="Kaset Red Mist" width="200" />
+              <figcaption class="title-item">Kaset Episode Red Mist ( Spongebob Squarepants )</figcaption>
+              <h4 class="harga">Rp 8.399.990.000</h4>
+              <label for="s">Masukkan jumlah barang yang ingin kamu beli:</label>
+              <input type="text" name="s" id="s" placeholder="Type Something" />
+              <br />
+              <button class="btn-buy" onclick="buyItems()">Buy Items</button>
+            </figure>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <figure>
+              <img src="img/freya.jpg" alt="Hero Freya" width="200" />
+              <figcaption class="title-item">Hero Freya + Skin Legend and Skin Mythic</figcaption>
+              <h4 class="harga">Rp 5.600.000</h4>
+              <label for="s">Masukkan jumlah barang yang ingin kamu beli:</label>
+              <input type="text" name="s" id="s" placeholder="Type Something" />
+              <br />
+              <button class="btn-buy" onclick="buyItems()">Buy Items</button>
+            </figure>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <figure>
+              <img src="img/akun hacker.jpg" alt="Akun Hacker" width="200" />
+              <figcaption class="title-item">Akun Hacker Mobile Legends</figcaption>
+              <h4 class="harga">Rp 3.000.000</h4>
+              <label for="s">Masukkan jumlah barang yang ingin kamu beli:</label>
+              <input type="text" name="s" id="s" placeholder="Type Something" />
+              <br />
+              <button class="btn-buy" onclick="buyItems()">Buy Items</button>
+            </figure>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <figure>
+              <img src="img/monopoly.jpg" alt="Monopoly" width="200" />
+              <figcaption class="title-item">Monopoly</figcaption>
+              <h4 class="harga">Rp 11.000</h4>
+              <label for="s">Masukkan jumlah barang yang ingin kamu beli:</label>
+              <input type="text" name="s" id="s" placeholder="Type Something" />
+              <br />
+              <button class="btn-buy" onclick="buyItems()">Buy Items</button>
+            </figure>
+          </th>
+        </tr>
+      </table>
+    </div>
+
+    <!-- post -->
+    <div id="post" class="post hidden">
+      <h1 class="title">= Post =</h1>
+      <table border="1" cellpadding="10">
+        <tr>
+          <th>
+            <figure>
+              <img src="img/mikasa basudara.jpg" alt="Mikasa Basudara" width="200" />
+              <figcaption class="title-item">Mikasa Basudara</figcaption>
+              <p class="content">Mikasa Basudara adalah seorang streamer dari film / series AOT. Di <i>off camera</i> dia melawan titan yang menyerang kampung halamannya bersama teman-temannya yaitu Sukirman, dan Yasmin.</p>
+            </figure>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <figure>
+              <video src="video/cover separuh aku.mp4" poster="img/janda ceria.jpg" controls width="200"></video>
+              <figcaption class="title-item">Janda Ceria - SMULE</figcaption>
+              <p class="content">Dikenal karena mengcover lagu NOAH - Separuh Aku</p>
+              <a href="https://youtu.be/-5sO-h4iBuQ">Link : https://youtu.be/-5sO-h4iBuQ</a>
+            </figure>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <figure>
+              <img src="img/ipin.jpg" alt="Ipin" width="200" />
+              <figcaption class="title-item">Ipin Silat</figcaption>
+              <p class="content">Ipin belajar Silat</p>
+            </figure>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <figure>
+              <img src="img/maling.jpg" alt="Maling" width="200" />
+              <figcaption class="title-item">Maling Jaksel</figcaption>
+              <p class="content">Which is, i don't care. But i tidak tahu apa-apa.</p>
+            </figure>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <figure>
+              <video src="video/kursi goyang.mp4" controls width="200"></video>
+              <figcaption class="title-item">Kursi Goyang</figcaption>
+              <p class="content">Jangan ditonton, jika kamu menonton video itu niscaya akan trauma seumur hidup.</p>
+            </figure>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <figure>
+              <video src="video/mobil di bukit.mp4" controls width="200"></video>
+              <figcaption class="title-item">Iklan Mobil</figcaption>
+              <p class="content">Iklan mobil tahun 90an.</p>
+            </figure>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <figure>
+              <video src="video/Ryan Hitzeed ganti profesi....mp4" controls width="200"></video>
+              <figcaption class="title-item">Hitzeed CH in the Other Universe</figcaption>
+              <p class="content">Akibat Doctor Strange & Peter Makarim.</p>
+              <a href="https://www.youtube.com/c/HitzeedCH">Link Channel Mas Hotzod : https://www.youtube.com/c/HitzeedCH</a>
+            </figure>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <figure>
+              <video src="video/Tiktok Om Ragil Joget India.mp4" controls width="200"></video>
+              <figcaption class="title-item">Om Ragil joget India.</figcaption>
+              <p class="content">Padahal dulunya jadi ketua kelas, sekarang malah begini.</p>
+            </figure>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <figure>
+              <img src="https://i.ytimg.com/vi/L8nIoyTwz5M/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBTg6nDaFy6YkIZvSYgMeOcP6cF_A" width="200" />
+              <figcaption class="title-item">WSU ( Wibu Stress Universe ).</figcaption>
+              <p class="content">Full Movie!!.</p>
+              <a href="https://youtu.be/L8nIoyTwz5M">Link Asli Video : https://youtu.be/L8nIoyTwz5M</a>
+            </figure>
+          </th>
+        </tr>
+      </table>
+    </div>
+
+    <!-- dark wiki -->
+    <div id="darkwiki" class="darkwiki hidden">
+      <h1 class="title">= Dark Wiki =</h1>
+      <table border="1" cellpadding="10">
+        <tr>
+          <th>
+            <div class="say-welcome">
+              <h3 class="say">Welcome to = The "Dark" Wiki =. All about of this website. Haha.</h3>
+              <div class="secret-page">
+                <h3 class="title">[ The Secret Page ]</h3>
+                <hr />
+                <div class="link-to-access">
+                  <a href="https://youtube.com/shorts/Hxs3s519j58?feature=share" target="_blank" class="link">Page 1 [ P312CU/\/\4 64|\|T3|\|6 |{4|_0 6k PU|\|Y4 4|_0K ]</a>
+                  <a href="https://youtu.be/YMdSussNspo" target="_blank" class="link">Page 2 [ 1|{|_4|\| 1|\|D0/\/\13 ]</a>
+                  <a href="https://youtu.be/tdLcV-zvzGQ" target="_blank" class="link">Page 3 [ PE|\|4/\/\P4|{4|\| \/\/4J4|=| |=|1T4/\/\ ]</a>
+                  <a href="https://youtu.be/i2rFF53EsD8" target="_blank" class="link">Page 4 [ 🥀 ]</a>
+                  <a href="https://youtu.be/rOzoWoA0b7Q" target="_blank" class="link">Page 5 [ 8 × 8 ÷ 64 = 1 ]</a>
+                </div>
+              </div>
+            </div>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <p class="content">
+              The "Dark" Web bukanlah darkweb yang asli, melainkan sebuah website iseng-iseng saja. Mendapatkan ide untuk membuat website ini dari topik pembicaraan soal darkweb. Di sini ada beberapa menu contohnya Shop, Post, dan Dark Wiki
+              yang sekarang kalian baca. Sebenarnya masih ada lagi "ruang rahasia" di The "Dark" Web ini. Sekian terima nasi goreng.
+            </p>
+            <p class="content">Cara mengakses "Ruang Rahasia" di The "Dark" Web</p>
+            <p class="content">
+              <a href="https://www.google.com/search?q=obat+batuk&sxsrf=APq-WBtwdvTq5Ca03xf-pQphxjDV3J5LBA:1647705745397&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjv65edxtL2AhV7SWwGHUUdB7oQ_AUoAXoECAEQAw&biw=1707&bih=868&dpr=0.8">Obat</a> -
+              <a href="https://www.google.com/search?q=senjata+free+fire&sxsrf=APq-WBvhS-vh5btUHSViw-p2VtlGFyuGkg:1647705782985&source=lnms&tbm=isch&sa=X&ved=2ahUKEwj8ko6vxtL2AhXv63MBHSJvAfIQ_AUoAXoECAEQAw&biw=1707&bih=868&dpr=0.8"
+                >Senjata</a
+              >
+              - <a href="https://www.google.com/search?q=hp&sxsrf=APq-WBtZs-cSg5p6kcI3logBm_NBYJdsVw:1647705805545&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiqi--5xtL2AhU47XMBHTr1APEQ_AUoAnoECAIQBA&biw=1707&bih=868&dpr=0.8">HP</a> -
+              <a href="https://www.google.com/search?q=hewan+peliharaan+lucu&sxsrf=APq-WBsdjsKXGLfD6oT9gaaUTa7MpXftMQ:1647705865483&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjyubnWxtL2AhW-6nMBHda9DvEQ_AUoAXoECAEQAw&biw=1707&bih=868&dpr=0.8"
+                >Beli Hewan Peliharaan</a
+              >
+              -
+              <a href="https://www.google.com/search?q=cara+menambah+ram+hp&sxsrf=APq-WBtpbrtMko_18dAw_UyX7lPPLznCow:1647705895054&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiro8bkxtL2AhUChuYKHbKVA-gQ_AUoAnoECAEQBA&biw=1707&bih=868&dpr=0.8"
+                >Menambah RAM HP</a
+              >
+              -
+              <a href="https://www.google.com/search?q=komik+upin+ipin&sxsrf=APq-WBs5yWLHj-v0OVcgtbLIRor7iLNq6g:1647705934619&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjpk7X3xtL2AhVM7XMBHaQ-D0wQ_AUoAXoECAEQAw&biw=1707&bih=868&dpr=0.8"
+                >Komik 18- Ke bawah</a
+              >
+            </p>
+            <p class="content">
+              <a href="https://instagram.com/acfarii12._"></a>
+            </p>
+          </th>
+        </tr>
+      </table>
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <h5 class="copy">Created By <a href="https://instagram.com/acfarii12._">Acfarii12</a>. Inpiration By <a href="https://instagram.com/sansky73">Haqi</a>.</h5>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
