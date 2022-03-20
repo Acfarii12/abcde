@@ -47,7 +47,7 @@ function darkwiki() {
 // i
 
 function buyItems() {
-  alert("3|2roR");
+  alert("Error");
 }
 
 function access() {
