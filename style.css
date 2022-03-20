@@ -1,7 +1,7 @@
 /* style.css */
 
 * {
-  margin: 1;
+  margin: 0;
   padding: 0;
 }
 
@@ -12,6 +12,31 @@ body {
 
 .hidden {
   display: none;
+}
+
+/* hack */
+
+#hack {
+  background: black;
+  height: 43.5pc;
+  width: 100%;
+}
+
+.hack h1 {
+  color: white;
+}
+
+.hack h4 {
+  color: white;
+}
+
+.code {
+  color: white;
+}
+
+#hack textarea {
+  height: 90px;
+  width: 13pc;
 }
 
 /* shop */
@@ -67,4 +92,10 @@ hr {
 
 #code p {
   font-weight: bolder;
+}
+
+/* footer */
+
+#foot {
+  margin-top: 30px;
 }

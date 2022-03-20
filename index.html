@@ -14,23 +14,43 @@
     <!-- My CSS -->
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <h1 class="link">= Welcome to The "Dark" Web =</h1>
-    <hr />
-    <div class="nav-menu">
-      <button onclick="shop()">= Shop =</button>
-      <button onclick="post()">= Post =</button>
-      <button onclick="darkwiki()">= Dark Wiki =</button>
+  <body id="body">
+    <div id="navbar" class="hidden">
+      <h1 class="link">= Welcome to The "Dark" Web =</h1>
+      <hr />
+      <div class="nav-menu">
+        <button onclick="shop()">= Shop =</button>
+        <button onclick="post()">= Post =</button>
+        <button onclick="darkwiki()">= Dark Wiki =</button>
+      </div>
+      <br />
+      <form action="">
+        <input type="text" placeholder="Telusuri" />
+        <button>Cari</button>
+      </form>
+      <hr />
     </div>
-    <br />
-    <form action="">
-      <input type="text" placeholder="Telusuri" />
-      <button>Cari</button>
-    </form>
-    <hr />
+
+    <div id="hack" class="hidden">
+      <div class="hack">
+        <h1 class="title">FCode for Hacker Maling Akun Epep</h1>
+        <hr />
+        <h4 class="description">Mau tetap masuk ke deep web? Ketik kode di bawah ini untuk menghack website ini!</h4>
+        <br />
+        <div class="code">
+          <span class="a">document.getElementById("body").style.display = "block";</span>
+          <br />
+          <span class="b">document.location.href = "index.html";</span>
+        </div>
+        <br />
+        <textarea name="" id="" placeholder="Type the code to hack this website!"></textarea>
+        <br />
+        <button class="btn-submit" onclick="access()">Submit</button>
+      </div>
+    </div>
 
     <!-- shop -->
-    <div id="shop" class="shop">
+    <div id="shop" class="shop hidden">
       <h1 class="title">= Shop =</h1>
       <table border="1" cellpadding="10">
         <tr>
@@ -313,7 +333,7 @@
     </div>
 
     <!-- footer -->
-    <footer>
+    <footer id="foot" class="hidden">
       <h5 class="copy">Created By <a href="https://instagram.com/acfarii12._">Acfarii12</a>. Inpiration By <a href="https://instagram.com/sansky73">Haqi</a>.</h5>
     </footer>
 
